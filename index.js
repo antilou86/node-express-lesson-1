@@ -19,7 +19,7 @@ let hobbits = [
   let nextId = 3;
 
 server.get('/hobbits', (req, res) => {
-    // query string parameters get added to req.query
+    //query string parameters get added to req.query
     const sortField = req.query.sortby || 'id';
    
   
