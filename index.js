@@ -1,7 +1,10 @@
 const express = require('express');
-const port = 5000;
+const userRoutes = require('./users/userRoutes');
 
+const port = 5000;
 const server = express();
+
+server.use('/users', userRoutes);
 server.use(express.json());
 
 let hobbits = [
